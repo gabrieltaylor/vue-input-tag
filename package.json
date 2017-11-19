@@ -9,7 +9,7 @@
   ],
   "author": "Matias Tucci <matiastucci@gmail.com>",
   "main": "dist/vue-input-tag.min.js",
-  "repository": "https://github.com/matiastucci/vue-input-tag",
+  "repository": "https://github.com/gabrieltaylor/vue-input-tag",
   "homepage": "https://matiastucci.github.io/vue-input-tag",
   "license": "MIT",
   "scripts": {
