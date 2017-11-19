@@ -99,14 +99,11 @@
 <style>
 
   .vue-input-tag-wrapper {
-    background-color: #fff;
-    border: 1px solid #ccc;
     overflow: hidden;
     padding-left: 4px;
     padding-top: 4px;
     cursor: text;
     text-align: left;
-    -webkit-appearance: textfield;
   }
 
   .vue-input-tag-wrapper .input-tag {
