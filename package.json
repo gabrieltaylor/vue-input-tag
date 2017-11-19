@@ -19,6 +19,7 @@
     "lint": "eslint --ext .js,.vue src test/unit/specs",
     "lint:fix": "eslint --fix .",
     "prepublish": "npm run build",
+    "prepare": "npm run build",
     "test": "jest --coverage"
   },
   "dependencies": {
