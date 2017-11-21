@@ -48,8 +48,9 @@
 
       addNew (tag) {
         if (tag && this.tags.indexOf(tag) === -1 && this.validateIfNeeded(tag)) {
-          this.tags.push(tag)
-          this.tagChange()
+          var tags = this.safeTags()
+          tags.push(tag)
+          this.tagChange(tags)
         }
         this.newTag = ''
       },
@@ -64,20 +65,26 @@
       },
 
       remove (index) {
-        this.tags.splice(index, 1)
-        this.tagChange()
+        var tags = this.safeTags()
+        tags.splice(index, 1)
+        this.tagChange(tags)
       },
 
       removeLastTag () {
         if (this.newTag) { return }
-        this.tags.pop()
-        this.tagChange()
+        var tags = this.safeTags()
+        tags.pop()
+        this.tagChange(tags)
       },
 
-      tagChange () {
+      safeTags () {
+        return this.tags.slice()
+      },
+
+      tagChange (tags) {
         if (this.onChange) {
           // avoid passing the observer
-          this.onChange(JSON.parse(JSON.stringify(this.tags)))
+          this.onChange(tags)
         }
       }
     }
