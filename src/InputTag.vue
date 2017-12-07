@@ -114,22 +114,21 @@
   }
 
   .vue-input-tag-wrapper .input-tag {
-    background-color: #cde69c;
+    background-color: #f9f9f9;
     border-radius: 2px;
-    border: 1px solid #a5d24a;
-    color: #638421;
+    color: #004bb3;
     display: inline-block;
     font-size: 13px;
     font-weight: 400;
     margin-bottom: 4px;
-    margin-right: 4px;
-    padding: 3px;
+    margin-right: 6px;
+    padding: 6px 10px;
   }
 
   .vue-input-tag-wrapper .input-tag .remove {
     cursor: pointer;
-    font-weight: bold;
-    color: #638421;
+    font-weight: 400;
+    padding-left: 5px;
   }
 
   .vue-input-tag-wrapper .input-tag .remove:hover {
